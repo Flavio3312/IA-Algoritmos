@@ -9,6 +9,8 @@ Este proyecto implementa y compara dos enfoques de búsqueda para resolver el pr
 ### Búsqueda Primero en Profundidad (DFS) Iterativa
 El algoritmo DFS iterativo explora exhaustivamente todas las posibles posiciones del robot en el árbol de decisiones. Utiliza una pila para realizar la búsqueda en profundidad y verifica todas las posibles rutas hasta encontrar el objetivo 'A'.
 
+![búsqueda no informada](https://github.com/Flavio3312/IA-Algoritmos/blob/main/busqueda%20no%20informada.png?raw=true)
+
 #### Código
 ```python
 def dfs_iterative(tree, start, objetivo):
@@ -50,6 +52,8 @@ print("Nodos visitados:", visited_nodes)
 
 ### Búsqueda Heurística A*
 El algoritmo A* utiliza una heurística para guiar la búsqueda hacia el objetivo 'A'. Combina las mejores características del algoritmo de Dijkstra y la búsqueda greedy, utilizando una función heurística basada en la distancia euclidiana.
+
+![búsqueda informada](https://github.com/Flavio3312/IA-Algoritmos/blob/main/busqueda%20informada.png)
 
 #### Código
 ```python
