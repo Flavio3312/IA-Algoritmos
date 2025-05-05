@@ -1,9 +1,8 @@
+
 # Proyecto de Búsqueda en el Espacio de Estados
 
 ## Descripción
 Este proyecto implementa y compara dos enfoques de búsqueda para resolver el problema de navegación de un robot en un árbol de decisiones: la búsqueda primero en profundidad (DFS) iterativa y la búsqueda heurística A*. El objetivo es encontrar la posición final del robot en el árbol de decisiones, representada por el nodo 'A'.
-
-
 
 ## Algoritmos Implementados
 
@@ -49,14 +48,11 @@ visited_nodes = dfs_iterative(tree, 'B', 'A')
 print("Nodos visitados:", visited_nodes)
 ```
 
-
-
 ### Búsqueda Heurística A*
 El algoritmo A* utiliza una heurística para guiar la búsqueda hacia el objetivo 'A'. Combina las mejores características del algoritmo de Dijkstra y la búsqueda greedy, utilizando una función heurística basada en la distancia euclidiana.
 
-#### Codigo
-
-´´´python
+#### Código
+```python
 from typing import List, Tuple, Dict, Set
 import numpy as np
 import heapq
@@ -160,7 +156,6 @@ start = 'B'
 goal = 'A'
 path = find_path(start, goal)
 visualize_path(path)
-
 ```
 
 ## Comparación de Enfoques
@@ -187,8 +182,4 @@ visualize_path(path)
 **Dificultades:**
 - Mayor consumo de memoria.
 - Dependencia de la calidad de la heurística.
-- Complejidad de implementación.
 
-## Conclusión
-
-El algoritmo A* se considera la opción más apropiada para resolver el problema de navegación del robot, debido a su eficiencia y capacidad para encontrar el camino más corto. La búsqueda en el espacio de estados proporciona una estructura clara y efectiva para abordar este tipo de problemas, permitiendo la exploración y optimización de rutas de manera sistemática.
